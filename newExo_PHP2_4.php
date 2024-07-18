@@ -23,30 +23,66 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
     .table{
         padding : 1;
     }
+
+    .a {
+        color : red;
+    }
 </style>
 
 <!-- Créer le tableau -->
 <table border 1>
 
 <!--Entête du Tableau -->
-<thead>
-        <tr><!-- Créer les cases de l'entête du tableau -->
-            <th>Pays</th><th>Capitales</th><th>Liens Wiki</th>
-        </tr>
-</thead>
+    <thead>
+            <tr><!-- Créer les cases de l'entête du tableau -->
+                <th>Pays</th><th>Capitales</th><th>Liens Wiki</th>
+            </tr>
+    </thead>
 
 <body>
     <tr>
-        <td>dfgh</td>
-        <td>dfgh</td>
-        <td>dfgh</td>            
+        <td>ALLEMAGNE</td>
+        <td>Berlin</td>
+        <td><a href=https://fr.wikipedia.org/wiki/Berlin target='_blank'>Lien</a></td>            
+    </tr>
+</body>
+
+<body>
+    <tr>
+        <td>ESPAGNE</td>
+        <td>Madrid</td>
+        <td><a href=https://fr.wikipedia.org/wiki/Madrid target='_blank'>Lien</a></td>            
+    </tr>
+</body>
+
+<body>
+    <tr>
+        <td>FRANCE</td>
+        <td>Paris</td>
+        <td><a href=https://fr.wikipedia.org/wiki/Paris target='_blank'>Lien</a></td>            
+    </tr>
+</body>
+
+<body>
+    <tr>
+        <td>ITALIE</td>
+        <td>Rome</td>
+        <td><a href=https://fr.wikipedia.org/wiki/Rome target='_blank'>Lien</a></td>            
+    </tr>
+</body>
+
+<body>
+    <tr>
+        <td>USA</td>
+        <td>Washington</td>
+        <td><a href=https://fr.wikipedia.org/wiki/Washington target='_blank'>Lien</a></td>            
     </tr>
 </body>
 
 
 
-
 <?php
 
-
+$capitales = array ("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid");
+asort($capitales)
 ?>
