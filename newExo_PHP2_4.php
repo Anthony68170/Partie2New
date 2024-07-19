@@ -84,5 +84,22 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
 <?php
 
 $capitales = array ("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid");
-asort($capitales)
+asort($capitales);
+
+function afficherCapitale($capitale){
+    foreach($capitales as $pays => $capitale) {
+        $result .="<tr>
+                        <td>".mb_strtoupper($pays)."</td>
+                        <td>".ucfirst($capitale)."</td>
+                  </tr>";
+    }
+
+}
+
+
+
+
+
+
+
 ?>

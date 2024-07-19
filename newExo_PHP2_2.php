@@ -10,10 +10,10 @@ une fonction personnalisée.<br>
 
 <h2>Résultat demandé</h2>
 <p>Affichage demandé<br>
-<br>Un tableau associatif intégrant les Pays (1ère colonne) et leurs capitales respectives (2ème colonne)</p>
+<br>Un tableau associatif intégrant les Pays (1ère colonne) et leurs capitales respectives (2ème colonne)<br></p>
 
  <!-- Créer le Tableau (appeler la fonction "table" & avec "Border" Définir le contour -->
-<table border=1>
+<!-- <table border=1> -->
 
 <!--Entête du Tableau -->
     <thead>
@@ -53,8 +53,9 @@ $capitales = [
     "Allemagne"=>"Berlin",
     "USA"=>"Washington",
     "Italie"=>"Rome", 
-    "truw"=>"gfhfdy"
+    "truw"=>"géhfdy<br>"
 ];
+
 
 foreach($capitales as $pays => $capitale){
     echo "$pays a pour capitale : $capitale<br>";
