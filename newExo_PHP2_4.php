@@ -37,7 +37,7 @@ echo '<tr><th>Pays</th><th>Capitale</th><th>Liens</th></tr>';
 foreach ($capitales as $pays=>$capitale){
     echo '<tr>';
     echo '<td>' . $pays . '</td>';
-    echo <td> . $capitale . '</td>';
+    echo '<td>' . $capitale . '</td>';
     echo '<td> . href=<a"https://fr.wikipedia.org/wiki/ target="_blank">Lien</a></td>' . $capitale;
 }
 
