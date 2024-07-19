@@ -85,28 +85,12 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
 
 $capitales = array ("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington",
 "Italie"=>"Rome","Espagne"=>"Madrid");
-
-// asort($capitales);
-
-// function afficherCapitale($capitales){
-//     foreach($capitales as $pays => $capitale) {
-//         $result.="<tr>
-//                         <td>".mb_strtoupper($pays)."</td>
-//                         <td>".ucfirst($capitale)."</td>
-//                   </tr>";
-//     }
-
-// }
-// echo afficherCapitale($capitales); 
-
-// echo array($capitales);
-// $result ($capitales);
-// return $result;
-
+?>
 function afficherTableau($capitales){
     ksort($capitales);
 
-   $result = "<table border=1>
+    $result = "<table border=1>
+            <body>
                     <thead>
                         <tr>
                             <th>Pays</th>
@@ -120,16 +104,7 @@ function afficherTableau($capitales){
         $result .="<tr>
                         <td>".mb_strtoupper($pays)."</td>
                         <td>".ucfirst($capitale)."</td>
-                        <td>".https://www.wikipedia.org."</td>
+                        <td><a href=https://fr.wikipedia.org/wiki/Washington target='_blank'>Lien</a></td>
                   </tr>";
-    }
-
-    $result .= "</tbody></table>";
-    return $result;
-};
-
-
-https://fr.wikipedia.org
-
-
-?>
+}
+?> 
