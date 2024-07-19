@@ -33,73 +33,103 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
 <table border 1>
 
 <!--Entête du Tableau -->
-    <thead>
+    <!-- <thead>
             <tr><!-- Créer les cases de l'entête du tableau -->
-                <th>Pays</th><th>Capitales</th><th>Liens Wiki</th>
+                <!-- <th>Pays</th><th>Capitales</th><th>Liens Wiki</th>
             </tr>
-    </thead>
+    </thead> -->
 
 <body>
     <tr>
-        <td>ALLEMAGNE</td>
-        <td>Berlin</td>
-        <td><a href=https://fr.wikipedia.org/wiki/Berlin target='_blank'>Lien</a></td>            
-    </tr>
+        <!-- <td>ALLEMAGNE</td>
+        <td>Berlin</td> -->
+        <!-- <td><a href=https://fr.wikipedia.org/wiki/Berlin target='_blank'>Lien</a></td>            
+    </tr> -->
 </body>
 
 <body>
-    <tr>
+    <!-- <tr>
         <td>ESPAGNE</td>
         <td>Madrid</td>
         <td><a href=https://fr.wikipedia.org/wiki/Madrid target='_blank'>Lien</a></td>            
-    </tr>
+    </tr> -->
 </body>
 
 <body>
-    <tr>
+    <!-- <tr>
         <td>FRANCE</td>
         <td>Paris</td>
         <td><a href=https://fr.wikipedia.org/wiki/Paris target='_blank'>Lien</a></td>            
-    </tr>
+    </tr> -->
 </body>
 
 <body>
-    <tr>
+    <!-- <tr>
         <td>ITALIE</td>
         <td>Rome</td>
         <td><a href=https://fr.wikipedia.org/wiki/Rome target='_blank'>Lien</a></td>            
-    </tr>
+    </tr> -->
 </body>
 
 <body>
-    <tr>
+    <!-- <tr>
         <td>USA</td>
         <td>Washington</td>
         <td><a href=https://fr.wikipedia.org/wiki/Washington target='_blank'>Lien</a></td>            
-    </tr>
+    </tr> -->
 </body>
 
 
 
 <?php
 
-$capitales = array ("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid");
-asort($capitales);
+$capitales = array ("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington",
+"Italie"=>"Rome","Espagne"=>"Madrid");
 
-function afficherCapitale($capitale){
+// asort($capitales);
+
+// function afficherCapitale($capitales){
+//     foreach($capitales as $pays => $capitale) {
+//         $result.="<tr>
+//                         <td>".mb_strtoupper($pays)."</td>
+//                         <td>".ucfirst($capitale)."</td>
+//                   </tr>";
+//     }
+
+// }
+// echo afficherCapitale($capitales); 
+
+// echo array($capitales);
+// $result ($capitales);
+// return $result;
+
+function afficherTableau($capitales){
+    ksort($capitales);
+
+   $result = "<table border=1>
+                    <thead>
+                        <tr>
+                            <th>Pays</th>
+                            <th>Capitales</th> 
+                            <th>lien wiki</th> 
+                        </tr>
+                    </thead>
+            <tbody>";
+
     foreach($capitales as $pays => $capitale) {
         $result .="<tr>
                         <td>".mb_strtoupper($pays)."</td>
                         <td>".ucfirst($capitale)."</td>
+                        <td>".https://www.wikipedia.org."</td>
                   </tr>";
     }
 
-}
+    $result .= "</tbody></table>";
+    return $result;
+};
 
 
-
-
-
+https://fr.wikipedia.org
 
 
 ?>
