@@ -24,12 +24,10 @@ une fonction personnalisée.<br>
     </thead>
 
 <!--Corps du Tableau -->
-<body>
+<tbody>
     <tr>
         <td>France</td> <!--Créer plusieurs td groupés avec td*4 par exemple (apparition de 4 td en auto) -->
         <td>Paris</td>
-        <td></td>
-        <td></td>
     </tr>
     
     <tr>
@@ -45,7 +43,7 @@ une fonction personnalisée.<br>
         <td>Italie</td>
         <td>Rome</td>
     </tr>
-</body>
+</tbody>
 </table>
 
 <?php
@@ -54,7 +52,38 @@ $capitales = [
     "France"=>"Paris",
     "Allemagne"=>"Berlin",
     "USA"=>"Washington",
-    "Italie"=>"Rome"
-]
+    "Italie"=>"Rome", 
+    "truw"=>"gfhfdy"
+];
+
+foreach($capitales as $pays => $capitale){
+    echo "$pays a pour capitale : $capitale<br>";
+
+}
+
+echo afficherTableau($capitales);
+
+function afficherTableau($capitales){
+    ksort($capitales);
+    $result = "<table border=1>
+                    <thead>
+                        <tr>
+                            <th>Pays</th>
+                            <th>Capitales</th> 
+                        </tr>
+                    </thead>
+            <tbody>";
+
+    foreach($capitales as $pays => $capitale) {
+        $result .="<tr>
+                        <td>".mb_strtoupper($pays)."</td>
+                        <td>".ucfirst($capitale)."</td>
+                  </tr>";
+    }
+
+    $result .= "</tbody></table>";
+    return $result;
+};
+
 
 ?>
