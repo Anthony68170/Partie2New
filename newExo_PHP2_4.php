@@ -30,6 +30,9 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
             <tr>
                 <th>Pays</th><th>Capitales</th><th>Liens</th>
             </tr>
+            <tr>
+                <td>France</td><th>Capitales</th><th>Liens</th>
+            </tr>
 
     </table></body>
 
