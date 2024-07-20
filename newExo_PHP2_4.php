@@ -18,29 +18,56 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
 <br>Le tableau passé en argument sera le suivant :<br>
 
 <br>$capitales = array ("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid");<br></p>
-
-
-<table> <!--Dessiner le tableau-->
-    <thead> <!-- C'est l'entête (mnémoTech HEAD=ENTETE HTML simpsons)-->
-        <tr> <!-- Dessinner La ou les cases de l'entete du tableau-->
-            <th>Pays</th><th>Capitales</th><th>Liens</th>
-        </tr>
-    </thead> <!-- Ici je ferme l'entete, et en-dessous (BODY comme HTML simpsons) -->
-    <tbody>
-
-</table>
-
 <?php
-
-$capitales = array ("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid");
-echo '<tr><th>Pays</th><th>Capitale</th><th>Liens</th></tr>';
-foreach ($capitales as $pays=>$capitale){
-    echo '<tr>';
-    echo '<td>' . $pays . '</td>';
-    echo '<td>' . $capitale . '</td>';
-    echo '<td><a href="https://fr.wikipedia.org/wiki/'  . $capitale ;
-}
-
+$capitales = array(
+    "France" => "Paris",
+    "Allemagne" => "Berlin",
+    "USA" => "Washington",
+    "Italie" => "Rome",
+    "Espagne" => "Madrid"
+);
 ?>
-
-</tbody>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tableau PHP</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: grey;
+            font-size: x-large;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Pays</th>
+                <th>Capitale</th>
+                <th>Liens Wiki</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            foreach ($capitales as $pays => $capitale) {
+                echo '<tr>';
+                echo '<td>' . $pays . '</td>';
+                echo '<td>' . $capitale . '</td>';
+                echo '<td><a href="https://fr.wikipedia.org/wiki/' . $capitale . '" target="_blank">Lien</a></td>';
+                echo '</tr>';
+            }
+            ?>
+        </tbody>
+    </table>
+</body>
+</html>
