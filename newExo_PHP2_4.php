@@ -30,9 +30,13 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
             <tr>
                 <th>Pays</th><th>Capitales</th><th>Liens</th>
             </tr>
-            <tr>
-                <td>France</td><th>Capitales</th><th>Liens</th>
-            </tr>
+            
+            <?php
+            $capitales = array("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid");
+            foreach ($capitales as $pays => $capitale) {
+                echo "". $pays ."". $capitale ."";
+            }
+            ?>
 
     </table></body>
 
