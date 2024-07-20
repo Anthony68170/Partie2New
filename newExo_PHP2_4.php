@@ -34,6 +34,7 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
             <?php
             $capitales = array("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid");
             foreach ($capitales as $pays => $capitale) {
+                echo '<tr>';
                 echo "". $pays ."". $capitale ."";
             }
             ?>
