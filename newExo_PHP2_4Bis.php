@@ -9,7 +9,10 @@
 <body>
     <table border="1">
     <tr>
-        <th>Pays</th>
+        <th>Pays</th><th>Capitales</th><th>Liens</th>
+        <?php
+        
+        ?>
     </tr>
 </body>
 </html>

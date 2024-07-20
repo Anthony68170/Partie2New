@@ -40,7 +40,7 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
                         echo '<th>'. $pays .'</th>' ;
                         echo '<td>' .$capitale . '</td>';
                         // https://developer.mozilla.org/fr/docs/Web/HTML/Element/a#href
-                        echo '<td> "<a href=https://fr.wikipedia.org/wiki . $capitale . target=_blank>Elan Formation</a>"</td>';
+                        echo '<td> <a href="https://fr.wikipedia.org/wiki/ . $capitales ." target=_blank>Wikipédia </a></td>';
                         echo '</tr>';
                     }
                     ?>
