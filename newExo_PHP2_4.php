@@ -37,6 +37,7 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
                 echo '<tr>';
                 echo '<th>'. $pays .'</th>' ;
                 echo '<th>' .$capitale . '</th>';
+                echo '<th>' <a href="https://fr.wikipedia.org/wiki/" .$capitale . '</th>';
                 echo '</tr>';
             }
             ?>
