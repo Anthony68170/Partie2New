@@ -28,7 +28,7 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
     <body>
         <table border="1">
             <tr>
-                <td>Pays</td><td>Capitales</td>
+                <th>Pays</th><th>Capitales</th><th>Liens</th>
             </tr>
 
     </table></body>
