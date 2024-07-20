@@ -19,3 +19,18 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
 
 <br>$capitales = array ("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid");<br></p>
 
+<!DOCTYPE Html>
+<html>
+    <head>
+        <h1>Tableau Associatif "Capitales"</h1>
+    </head>
+
+    <body>
+        <table border="1">
+            <tr>
+                <td>Pays</td><td>Capitales</td>
+            </tr>
+
+    </table></body>
+
+</html>
