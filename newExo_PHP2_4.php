@@ -28,20 +28,23 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
     <body>
         <table border="1">
             <tr>
-                <th>Pays</th><th>Capitales</th><th>Liens</th>
+                <th>Pays</th>
+                <th>Capitales</th>
+                <th>Liens</th>
             </tr>
             
-            <?php
-            $capitales = array("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid");
-            foreach ($capitales as $pays => $capitale) {
-                echo '<tr>';
-                echo '<th>'. $pays .'</th>' ;
-                echo '<th>' .$capitale . '</th>';
-                echo '<th>' <a href="https://fr.wikipedia.org/wiki/" .$capitale . '</th>';
-                echo '</tr>';
-            }
-            ?>
+                    <?php
+                    $capitales = array("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid");
+                    foreach ($capitales as $pays => $capitale) {
+                        echo '<tr>';
+                        echo '<th>'. $pays .'</th>' ;
+                        echo '<td>' .$capitale . '</td>';
+                        // echo '<td>' <a href="https://fr.wikipedia.org/wiki/' . $capitale . '"target=_blank">Lien</a></td>';
+                        echo '</tr>';
+                    }
+                    ?>
 
-    </table></body>
+    </table>
+    </body>
 
 </html>
