@@ -36,6 +36,7 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
             foreach ($capitales as $pays => $capitale) {
                 echo '<tr>';
                 echo '<th>'. $pays .'</th>' ;'<th>' .$capitale . '</th>';
+                echo '<th>'. $pays .'</th>' ;'<th>' .$capitale . '</th>';
                 echo '</tr>';
             }
             ?>
