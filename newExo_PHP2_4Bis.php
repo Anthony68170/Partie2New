@@ -1,11 +1,20 @@
+
+
+
+
 <!DOCTYPE html>
 <html>
+
+
+
 <head>
     <h1>Tableau Html pour PHP</h1>
 </head>
+
+
+
 <body>
-    
-    <table border 2> 
+    <table border 5> 
 
         <tr>
             <td>Pays</td><td>Capitales</td>
@@ -23,6 +32,9 @@
         ?>
 
     </table>
-
 </body>
+
+
+
+
 </html>
