@@ -22,7 +22,7 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
 <!DOCTYPE Html>
 <html>
     <head>
-        <h1>Tableau Associatif "Capitales"</h1>
+        <h1>Exercice 4 PHP2 - Tableaux html et associatif"</h1>
     </head>
 
     <body>
@@ -41,7 +41,8 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
                         echo '<td>' .$capitale . '</td>';
                         // echo '<td>' <a href="https://fr.wikipedia.org/wiki/.$capitales." target="blank">Wikipédia</a>'</td>';
                         // echo '<td>' <a href=https://fr.wikipedia.org/wiki/.$capitale .>.$pays.</td>';
-
+                        // https://www.lephpfacile.com/manuel-php/function.urlencode.php
+                        echo '<td><a href=https://fr.wikipedia.org/wiki/"' . urlencode($capitale) . "' target='_blank'>Lien</a>'</td>';
                         // https://developer.mozilla.org/fr/docs/Web/HTML/Element/a#href
                         // echo "<a href=https://www.elan-formation.fr target='_blank'>Elan Formation</a>";
                         // echo '<td> "<a href=https://fr.wikipedia.org/wiki/'<td>' .$capitale . '</td>' target='_blank'>Wikipédia</a>"'</td>';
