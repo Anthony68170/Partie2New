@@ -10,21 +10,22 @@
 
 
 <!-- Il faut donc d'abord créer le tableau (partie HTML affichant une structure)
- Puis PHP pour obtenir des données pour ensuite les afficher  -->
+ Puis PHP pour obtenir un remplissage auto des données à afficher  -->
 
  <h3>Affichage</h3>
     <body>
-        <form form="Nom" method="post" action=" ">
-            Nom <br><input type="text" name="nom"/> <br/>
-            Prénom <br><input type="text" firstname="Prénom"/> <br/>
-            Ville <br><input type="text" city="Ville"/> <br/>
+        <form nomInput="Nom" method="post" action=" ">
+        <!-- https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061492-creez-des-formulaires -->
+            <label>Votre nom</label> : <br><input type="text" name="nom"> <br/>
+            <label>Votre prénom</label> : <br><input type="text" firstname="Prénom"/> <br/>
+            <label>Votre ville</label> :  <br><input type="text" city="Ville"/> <br/>
         </form>
     </body>
 
 <?php
-
-foreach($form as $ => $)
-$form count
-echo "$name", "$firstname", "$city";
+// $nomInput = array("Nom", "Prénom", "Ville")
+// foreach($nomInput as $prenom => $ville) {
+//     echo "". $form[$key] ."".
+// }
 
 ?>

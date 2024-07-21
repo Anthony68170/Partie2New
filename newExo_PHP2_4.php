@@ -37,10 +37,15 @@ le lien hypertexte de la page Wikipédia de la capitale. <br>
                     $capitales = array("France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid");
                     foreach ($capitales as $pays => $capitale) {
                         echo '<tr>';
-                        echo '<th>'. $pays .'</th>' ;
+                        echo '<th>' . $pays . '</th>' ;
                         echo '<td>' .$capitale . '</td>';
+                        // echo '<td>' <a href="https://fr.wikipedia.org/wiki/.$capitales." target="blank">Wikipédia</a>'</td>';
+                        // echo '<td>' <a href=https://fr.wikipedia.org/wiki/.$capitale .>.$pays.</td>';
+
                         // https://developer.mozilla.org/fr/docs/Web/HTML/Element/a#href
-                        echo '<td> <a href="https://fr.wikipedia.org/wiki/ . $capitales ." target=_blank>Wikipédia </a></td>';
+                        // echo "<a href=https://www.elan-formation.fr target='_blank'>Elan Formation</a>";
+                        // echo '<td> "<a href=https://fr.wikipedia.org/wiki/'<td>' .$capitale . '</td>' target='_blank'>Wikipédia</a>"'</td>';
+                        
                         echo '</tr>';
                     }
                     ?>

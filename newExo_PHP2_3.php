@@ -9,7 +9,7 @@
 <?php
 
 # Afficher un lien vers le site Elan Formation
-# Ouvrir le lien dans un onglet diiférent avec la fonction target = '_____'
+# Ouvrir le lien dans un onglet différent avec la fonction target = '_____'
 echo "<a href=https://www.elan-formation.fr target='_blank'>Elan Formation</a>";
 
 ?>
