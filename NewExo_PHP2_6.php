@@ -25,4 +25,6 @@ function alimenterListeDeroulante($elements){
 $elements= array("Monsieur","Madame","Mademoiselle") ;
 
 alimenterListeDeroulante($elements) ;
+
+// https://www.phptutorial.net/php-tutorial/php-select-option/
 ?>
