@@ -2,7 +2,8 @@
 
 <h2>Créer une fonction pour un formulaire<br></h2>
 
-<p>Consigne demandée : <br>Créer une fonction personnalisée permettant de créer un formulaire de champs de texte en précisant le nom des champs associés. <br>
+<p>Consigne demandée : <br>Créer une fonction personnalisée permettant de créer un formulaire de champs 
+de texte en précisant le nom des champs associés. <br>
 <br>Exemple :<br>
 <br>$nomsInput = array("Nom","Prénom","Ville");<br>
 <br>afficherInput($nomsInput);<br>
