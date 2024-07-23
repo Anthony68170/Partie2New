@@ -20,7 +20,7 @@ alimenterListeDeroulante($elements);<br></p>
 
 <?php
 function alimenterListeDeroulante($elements){
-    echo "<option value=" .$elements.> .$element."</option>";
+    echo "<option value=.$elements.>" .$element."</option>";
 }
 $elements= array("Monsieur","Madame","Mademoiselle") ;
 
