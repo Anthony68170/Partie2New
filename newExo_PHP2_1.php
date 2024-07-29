@@ -25,7 +25,7 @@ $texte = "Mon texte en paramètre";
 // 2A 
 echo convertirMajRouge($texte); // 2B
 
-/* 3A ATTENTION : Faire attention aux règles "CAMELCASE" nommant "function" => 1ère lettre en minuscule, 
+/* 3A ATTENTION : Faire attention aux règles "camelCase" nommant la "function" => 1ère lettre en minuscule, 
 et chaque mot suivant 1ère lettre en Majuscule*/
 function convertirMajRouge($texte){ // 3B
     $result = mb_strtoupper($texte); // 3C
