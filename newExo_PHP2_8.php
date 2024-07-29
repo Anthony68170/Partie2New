@@ -15,6 +15,7 @@ function repeterImage($urlImage, $cmpt) {
 // definition des variables
 
 //url
+$urlImage = const ;
 const URL = "https://my.mobirise.com/data/userpic/764.jpg";
 // compteur
 $repeterImage = 4;

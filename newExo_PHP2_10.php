@@ -40,24 +40,12 @@
         </div>
 
     </form>
-    <?php
     
-    $formulaire = ["name", "firstname", "city", "mail",
-];
-    function afficherFormulaire($formulaire){
-        echo afficherFormulaire($formulaire);
-    }
+    <?php
 
-    $listeDeroulante = ["Devs", "Design", "integ", "Chef"]
-    [
-        echo "<select name=formation>"
-        foreach($elements as $elements){
-            echo afficherFormulaire($elements);
-        }
-    ]
-    function afficherListeDeroulante($elements){
-        echo '<option value=".$elements.>"' .$element. '</option>';
-    }
+include("newExo_PHP2_5");
+
+
     ?>
 
 </body>
