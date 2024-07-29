@@ -20,10 +20,10 @@
             <input type="text" name="name" id="name" required><br><br>
             <label for="firstname">Votre prénom</label><br>
             <input type="text" name="firstname" id="firstname" required><br><br>
-            <label for="city">Votre ville</label><br>
-            <input type="text" name="city" id="city" required><br><br>
             <label for="mail">Votre mail</label><br>
             <input type="text" name="mail" id="mail" required><br><br>
+            <label for="city">Votre ville</label><br>
+            <input type="text" name="city" id="city" required><br><br>
         </div>
 
         <!-- <div -->
@@ -32,8 +32,21 @@
             <option value='Design' >Designer Web</option>
             <option value='Integ' >Intégrateur</option>
             <option value='Chef' >Chef de projet</option>
-        </select>
+        </select><br><br>
         <!-- </div> -->
+
+        <input type="radio" name="gender"
+        <?php if (isset($gender) && $gender=="Masculin") echo "checked";?>
+        value="Masculin">Male<br>
+
+        <input type="radio" name="gender"
+        <?php if (isset($gender) && $gender=="male") echo "checked";?>
+        value="Féminin">Female<br>
+
+        <input type="radio" name="gender"
+        <?php if (isset($gender) && $gender=="other") echo "checked";?>
+        value="Autre">Other
+        
 
         <div class="formulaire"><br>
             <input type="submit" value="Submit">
@@ -42,8 +55,14 @@
     </form>
     
     <?php
+    
+include(afficherInput($nomInput)){
+    echo include("afficherInput")
+};
 
-include("newExo_PHP2_5");
+include(alimenterListeDeroulante($elements)){
+    echo "alimenterListeDeroulante"
+};
 
 
     ?>

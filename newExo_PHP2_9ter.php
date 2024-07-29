@@ -4,6 +4,7 @@
 // }
 ?>
 <h1>Affichage</h1>
+
 <input type="radio" name="gender"
 <?php if (isset($gender) && $gender=="Masculin") echo "checked";?>
 value="Masculin">Male<br>

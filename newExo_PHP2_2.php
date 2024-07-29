@@ -52,8 +52,7 @@ $capitales = [
     "France"=>"Paris",
     "Allemagne"=>"Berlin",
     "USA"=>"Washington",
-    "Italie"=>"Rome", 
-    "truw"=>"géhfdy<br>"
+    "Italie"=>"Rome",
 ];
 
 

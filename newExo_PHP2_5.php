@@ -19,11 +19,20 @@ de texte en précisant le nom des champs associés. <br>
         <!-- https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061492-creez-des-formulaires -->
             <label>Votre nom</label> : <br><input type="text" name="nom"> <br/>
             <label>Votre prénom</label> : <br><input type="text" firstname="Prénom"/> <br/>
+            <label>Votre adresse mail</label> : <br><input type="text" mail="Mail"/> <br/>
             <label>Votre ville</label> :  <br><input type="text" city="Ville"/> <br/>
         </form>
     </body>
 
-<?php
+    <?php
+    
+    function afficherInput($nomInput){ 
+    echo"afficherInput".$nomInput[""]."".$nomInput[""]
+    };
+    
+    $nomInput=array("Nom","Prénom","Ville")
+
+
 // $nomInput = array("Nom", "Prénom", "Ville")
 // foreach($nomInput as $prenom => $ville) {
 //     echo "". $form[$key] ."".

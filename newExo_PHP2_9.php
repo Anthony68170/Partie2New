@@ -14,7 +14,10 @@
         <input type="radio" value="" name="autre">Autre<br>
         
         <?php  
-        
+        $genre["mascuylin", "feminin", "autre"]
+
+        function( $genre ) {
+            $genre["<input type"] = "$name";
         ?>
     </form>
     
